@@ -1,209 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
     3. Allow percentage-based heights in the application
   */
-  html, body {
-    height: 100%;
-  }
-  /*
+html,
+body {
+  height: 100%;
+}
+/*
     Typographic tweaks!
     4. Add accessible line-height
     5. Improve text rendering
   */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Ubuntu', sans-serif;
-  }
-  /*
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Ubuntu", sans-serif;
+}
+/*
     6. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     7. Remove built-in form typography styles
   */
-  input, button, textarea, select,*::placeholder {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select,
+*::placeholder {
+  font: inherit;
+}
+/*
     8. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     9. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
+#root,
+#__next {
+  isolation: isolate;
+}
 
-  body{
-    background: linear-gradient(90deg, rgba(107,179,247,1) 0%, rgba(107,207,247,1) 100%);
-  }
-  .wrapper{
-      padding: 2rem 2.5rem;
-  }
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(107, 179, 247, 1) 0%,
+    rgba(107, 207, 247, 1) 100%
+  );
+}
+.wrapper {
+  padding: 2rem 2.5rem;
+}
 
-
-  /* logo animated icons */
-  header{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  header h1{
-      color: #ededed;
-  }
-  .moon__sun_container{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 80px;  
-  }
-  .sun__container,.moon__container{
-    max-width: 60px;
-    overflow-x: hidden; 
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .sun {
-	width: 50px;
-	height: 50px;
-	background-color: #FFDE00;
-	border-radius: 50%;
-	box-shadow:
-		0 0 0 5px #FFDE0080,
-		0 0 0 8px #FFDE0040,
-		0 0 0 10px #FFDE0020,
-		0 0 0 14px #FFDE0010,
-		0 0 0 18px #FFDE0000,
-		0 0 10px 20px #FFDE0010;
-	animation:
-		sunrise 2s infinite linear forwards,
-        rays 2s 2s infinite linear;
-        transform: translateX(20px);
+/* logo animated icons */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: #ededed;
+}
+.moon__sun_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.sun__container,
+.moon__container {
+  max-width: 60px;
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sun {
+  width: 50px;
+  height: 50px;
+  background-color: #ffde00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #ffde0080, 0 0 0 8px #ffde0040, 0 0 0 10px #ffde0020,
+    0 0 0 14px #ffde0010, 0 0 0 18px #ffde0000, 0 0 10px 20px #ffde0010;
+  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+  transform: translateX(20px);
 }
 
 .moon {
-	height: 50px;
-	width: 50px;
-	background: rgb(207, 207, 212);
-	border-radius: 50%;
-	/*transition: 0.5s;*/
-	box-shadow: 0 0 5px #d3b3fc, 0 0 5px #f1edf7, 0 0 10px #f2f0f5,
-		0 0 100px #c9b3fc, 0 0 17px #999aad, inset 0 5px 12px 26px #f5f5f5,
-        inset -2px 8px 15px 36px #e6e6db;
-        transform: translateX(-20px);
+  height: 50px;
+  width: 50px;
+  background: rgb(207, 207, 212);
+  border-radius: 50%;
+  /*transition: 0.5s;*/
+  box-shadow: 0 0 5px #d3b3fc, 0 0 5px #f1edf7, 0 0 10px #f2f0f5,
+    0 0 100px #c9b3fc, 0 0 17px #999aad, inset 0 5px 12px 26px #f5f5f5,
+    inset -2px 8px 15px 36px #e6e6db;
+  transform: translateX(-20px);
 }
-  /* logo animated icons */
+/* logo animated icons */
 
-  /* input field */
-.input__city{
-    color: #ededed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1.5rem 0;
+/* input field */
+.input__city {
+  color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5rem 0;
 }
-  input{
-      border: none;
-      border-bottom: 1px solid #ededed;
-      padding: .3rem .5rem;
-      background-color: transparent;
-      color: inherit;
+input {
+  border: none;
+  border-bottom: 1px solid #ededed;
+  padding: 0.3rem 0.5rem;
+  background-color: transparent;
+  color: inherit;
+}
+input::placeholder {
+  color: inherit;
+}
+input:focus {
+  outline: none;
+}
+.input__btn {
+  margin: 1.5rem 0;
+}
+.btn {
+  font: inherit;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(66, 197, 248);
+  color: #ededed;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.btn:hover {
+  background-color: #ededed;
+  color: rgb(66, 197, 248);
+}
+
+/* input field */
+
+/* weather cards */
+.weather {
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+}
+.card__holder {
+  width: 100%;
+  font-size: 1.5rem;
+  color: #ededed;
+  font-weight: 700;
+  border-bottom: 2px solid #ededed;
+  margin-bottom: 1.5rem;
+}
+/* weather cards */
+
+/* grid cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  justify-content: center;
+  list-style: none;
+  grid-gap: 7px;
+}
+.card {
+  backdrop-filter: blur(14px) saturate(100%);
+  -webkit-backdrop-filter: blur(14px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.308);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 330px;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+}
+
+.card > * {
+  color: #121212;
+}
+.temperature {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+/* grid cards */
+
+/* kayframes */
+
+@keyframes sunrise {
+  0% {
+    box-shadow: none;
   }
-  input::placeholder{
-      color: inherit;
-  }
-  input:focus{
-      outline: none;
-  }
-
-  /* input field */
-
-    /* weather cards */
-    .weather{
-        padding: 1.5rem 2.5rem;
-        width: 100%;
-    }
-    .card__holder{
-        width: 100%;
-        font-size: 1.5rem;
-        color: #ededed;
-        font-weight: 700;
-        border-bottom: 2px solid #ededed;
-        margin-bottom: 1.5rem;
-    }
-    /* weather cards */
-
-    /* grid cards */
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
-        list-style: none;
-        grid-gap: 7px;
-    }
-    .card{
-        background-color:#eaeaea ;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.5rem;
-        width: 330px;
-        padding: 1rem 2.5rem;
-        border-radius: 12px;
-    }
-    .card > *{
-        color: #121212;
-    }
-    .temperature{
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-    /* grid cards */
-
-  /* kayframes */
-
-  @keyframes sunrise {
-	0% {
-		box-shadow: none;
-	}
 }
 
 @keyframes rays {
-	0% {
-		box-shadow: 
-		0 0 0 0 #FFDE0080,
-		0 0 0 8px #FFDE0040,
-		0 0 0 10px #FFDE0020,
-		0 0 0 14px #FFDE0010,
-		0 0 0 18px #FFDE0000,
-		0 0 10px 20px #FFDE0010;
-	}
-	100% {
-		box-shadow: 
-		0 0 0 8px #FFDE0040,
-		0 0 0 10px #FFDE0020,
-		0 0 0 14px #FFDE0010,
-		0 0 0 18px #FFDE0000,
-		0 0 10px 20px #FFDE0010;
-	}
+  0% {
+    box-shadow: 0 0 0 0 #ffde0080, 0 0 0 8px #ffde0040, 0 0 0 10px #ffde0020,
+      0 0 0 14px #ffde0010, 0 0 0 18px #ffde0000, 0 0 10px 20px #ffde0010;
+  }
+  100% {
+    box-shadow: 0 0 0 8px #ffde0040, 0 0 0 10px #ffde0020, 0 0 0 14px #ffde0010,
+      0 0 0 18px #ffde0000, 0 0 10px 20px #ffde0010;
+  }
 }
